@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from Connect2DB import *
+from connect2db import *
 from datetime import date
 import flask.json
 
