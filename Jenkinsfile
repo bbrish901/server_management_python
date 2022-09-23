@@ -13,7 +13,7 @@ stages {
 
 	stage('Test') {
 	steps {
-		sh 'python3 test.py'
+		sh 'python3 user_api.py'
 		input(id: "Deploy Gate", message: "Deploy ${params.project_name}?", ok: 'Deploy')
 	}
 	}
@@ -22,7 +22,7 @@ stages {
 	{
 	steps {
 		echo "deploying the application"
-		sh 'python3 test.py'
+		sh 'python3 user_api.py'
 	}
 	}
 }
