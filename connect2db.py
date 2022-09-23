@@ -1,11 +1,11 @@
-import psycopg2
+import  psycopg2
 #connecting to database
-def connectDB():
+def connectdb():
     filename = "db.config"
     contents = open(filename).read()
     config = eval(contents)
     try:
-        dbase = psycopg2.connect(
+        dbase =  psycopg2.connect(
             host=config['host'],
             dbname=config['dbname'],
             user=config['user'],
@@ -17,4 +17,4 @@ def connectDB():
         print('check database details',error)
 
 if __name__ == "__main__":
-    connectDB()
+    connectdb()
