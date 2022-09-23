@@ -1,4 +1,4 @@
-import  psycopg2
+import psycopg2
 #connecting to database
 def connectdb():
     filename = "db.config"
