@@ -22,7 +22,7 @@ stages {
 	{
 	steps {
 		echo "deploying the application"
-		sh "sudo nohup python3 app.py > log.txt 2>&1 &"
+		sh 'python3 test.py'
 	}
 	}
 }
