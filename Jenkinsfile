@@ -13,10 +13,7 @@ stages {
 
 	stage('Test') {
 	steps {
-		sh 'pip3 install psycopg2'
-		sh 'mkdir pg-config /$PATH'
 		sh 'python3 user_api.py'
-		input(id: "Deploy Gate", message: "Deploy ${params.project_name}?", ok: 'Deploy')
 	}
 	}
 
