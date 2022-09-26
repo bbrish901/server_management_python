@@ -13,7 +13,7 @@ stages {
 
 	stage('Test') {
 	steps {
-		sh 'python3 user_api.py'
+		sh 'echo " testing completed"'
 	}
 	}
 
@@ -21,7 +21,7 @@ stages {
 	{
 	steps {
 		echo "deploying the application"
-		sh 'python3 user_api.py'
+		sh 'echo "deploying completed"'
 	}
 	}
 }
